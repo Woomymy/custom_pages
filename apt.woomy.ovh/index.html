@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debian repo</title>
+    <link href="apt.woomy.ovh.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+      <h1 class="center">Woomy's debian repository</h1>
+      <h2 class="center">Installing the repo</h2>
+      <h3>1: Adding the GPG key</h3>
+      <code>
+        <span class="prompt">#</span> curl https://apt.woomy.ovh/key.gpg |
+        apt-key add -
+      </code>
+      <h3>2: Adding the repository in /etc/apt/sources.list.d/</h3>
+      <code>
+        <span class="prompt">#</span> apt install apt-transport-https
+        <br />
+        <span class="prompt">#</span>
+        echo "deb https://apt.woomy.ovh/ bullseye main" >> /etc/apt/sources.list.d/woomy-packages.list
+      </code>
+      <h2>3: Optional: Browse repo content:</h2>
+      <h3 class="white">
+        Open
+        <a class="blue" href="https://apt.woomy.ovh/browser/">https://apt.woomy.ovh/browser</a> to
+        watch the site content
+      </h3>
+  </body>
+</html>
