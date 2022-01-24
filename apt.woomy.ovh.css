@@ -3,11 +3,10 @@
   margin: 0;
   padding-top: 0;
   background: #070d19;
-  color: white;
+  color: #fff;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-
 body {
   padding: 5px;
   padding-bottom: 40px;
@@ -15,14 +14,6 @@ body {
 .center {
   text-align: center;
 }
-
-.background-white {
-  background: whitesmoke;
-  padding: 5px;
-  padding-bottom: 50px;
-  color: darkslategray;
-}
-
 code {
   line-height: 1.6;
   display: block;
@@ -30,32 +21,27 @@ code {
   font-size: x-large;
   background-color: #072f41;
   border: 1px solid #0e4861;
-  color: white;
+  color: #fff;
   display: block;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
   overflow-x: auto;
 }
-
 h2 {
   padding-top: 5px;
 }
-
-h3,
-p {
+h3 {
   padding: 5px;
 }
-
 .prompt {
   font-family: monospace;
   color: #f78888;
-  font-weight: bold;
+  font-weight: 700;
   background-color: inherit;
 }
-
 .white {
-  color: white;
+  color: #fff;
 }
 .blue {
   color: #1e81b0;
