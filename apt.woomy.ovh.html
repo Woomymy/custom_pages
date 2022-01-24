@@ -1,96 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debian repo</title>
+    <link href="apt.woomy.ovh.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Woomy debian repo</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            padding-top: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body {
-            background: #333;
-            color: white;
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        .background-white {
-            background: whitesmoke;
-            padding: 5px;
-            padding-bottom: 50px;
-            color: darkslategray;
-        }
-
-        #head {
-            padding: none;
-            margin: none;
-        }
-
-        code {
-            background-color: #eee;
-            border: 1px solid #999;
-            color: #333;
-            display: block;
-            padding: 20px;
-        }
-
-        h2 {
-            padding-top: 5px;
-            text-align: center;
-        }
-
-        h3,
-        p {
-            padding: 5px;
-        }
-        .prompt {
-            color: red;
-            font-weight: bold;
-        }
-        .white {
-            color: white;   
-        }
-        .blue {
-            color: #1e81b0;   
-        }
-    </style>
-</head>
-
-<body>
-    <div class="background-white" id="head">
-        <h1 class="center">
-            <br>
-            Woomy's debian repository
-        </h1>
-    </div>
-    <h2>Installing the repo</h2>
-    <h3>1: Adding the GPG key</h3>
-    <code>
-        <span class="prompt">#</span> curl https://apt.woomy.ovh/key.gpg | apt-key add -
-    </code>
-    <h3>
-        2: Adding the repository in /etc/apt/sources.list.d/
-    </h3>
-    <code>
+  <body>
+    <div class="install-info">
+      <h1 class="center">Woomy's debian repository</h1>
+      <h2 class="center">Installing the repo</h2>
+      <h3>1: Adding the GPG key</h3>
+      <code>
+        <span class="prompt">#</span> curl https://apt.woomy.ovh/key.gpg |
+        apt-key add -
+      </code>
+      <h3>2: Adding the repository in /etc/apt/sources.list.d/</h3>
+      <code>
         <span class="prompt">#</span> apt install apt-transport-https
-        <br>
-        <span class="prompt">#</span> echo "deb https://apt.woomy.ovh/ bullseye main" >> /etc/apt/sources.list.d/woomy-packages.list
-    </code>
-    <h3>
-        3: Optional: Browse repo content:
-    </h3>
-    <p class="white">
-        Open <a class="blue" href="/browser">https://apt.woomy.ovh/browser</a> to watch the site content
-    </p>
-</body>
-
+        <br />
+        <span class="prompt">#</span> echo "deb https://apt.woomy.ovh/ bullseye
+        main" >> /etc/apt/sources.list.d/woomy-packages.list
+      </code>
+      <h2>3: Optional: Browse repo content:</h2>
+      <h3 class="white">
+        Open
+        <a class="blue" href="https://apt.woomy.ovh/browser/">https://apt.woomy.ovh/browser</a> to
+        watch the site content
+      </h3>
+    </div>
+  </body>
 </html>
