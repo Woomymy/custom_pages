@@ -4,9 +4,14 @@
   padding-top: 0;
   background: #070d19;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
+body {
+  padding: 5px;
+  padding-bottom: 40px;
+}
 .center {
   text-align: center;
 }
@@ -23,7 +28,7 @@ code {
   display: block;
   font-family: monospace;
   font-size: x-large;
-  background-color: #073042;
+  background-color: #072f41;
   border: 1px solid #0e4861;
   color: white;
   display: block;
@@ -54,8 +59,4 @@ p {
 }
 .blue {
   color: #1e81b0;
-}
-.install-info {
-  padding: 5px;
-  padding-bottom: 40px;
 }
