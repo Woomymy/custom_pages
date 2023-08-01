@@ -1,48 +1,39 @@
-* {
-  padding: 0;
-  margin: 0;
-  padding-top: 0;
-  background: #070d19;
-  color: #fff;
+@import url("https://woomy.be/style/schemes/dark.css");
+@import url("https://woomy.be/style/schemes/light.css") (prefers-color-scheme: light);
+
+body, p, span {
+  background-color: var(--background);
+  color: var(--onBackground);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-body {
-  padding: 5px;
-  padding-bottom: 40px;
-}
+
 .center {
   text-align: center;
 }
+
 code {
   line-height: 1.6;
   display: block;
   font-family: monospace;
   font-size: x-large;
-  background-color: #072f41;
-  border: 1px solid #0e4861;
-  color: #fff;
+  background-color: var(--surface);
+  border: 1px solid var(--outline);
+  color: var(--onSurface);
   display: block;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
   overflow-x: auto;
 }
-h2 {
-  padding-top: 5px;
-}
-h3 {
-  padding: 5px;
-}
+
 .prompt {
-  font-family: monospace;
-  color: #f78888;
+  font-family: inherit;
+  color: var(--primary);
   font-weight: 700;
   background-color: inherit;
 }
-.white {
-  color: #fff;
-}
-.blue {
-  color: #1e81b0;
+
+a {
+  color: var(--secondary);
 }
