@@ -12,7 +12,8 @@ body, p, span {
   text-align: center;
 }
 
-code {
+pre {
+  position: relative;
   line-height: 1.6;
   display: block;
   font-family: monospace;
@@ -25,6 +26,19 @@ code {
   margin: 20px;
   border-radius: 5px;
   overflow-x: auto;
+  white-space: normal;
+}
+
+pre button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+
+  background-color: var(--secondary);
+  color: var(--onSecondary);
+  border: 1px solid var(--outline);
+  border-radius: 5px;
 }
 
 .prompt {
@@ -36,4 +50,9 @@ code {
 
 a {
   color: var(--secondary);
+}
+
+/* Code copy buttons are disabled by default and enabled if javascript is enabled */
+.code-copy-button {
+  display: none;
 }
