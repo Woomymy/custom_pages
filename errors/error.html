@@ -1,0 +1,49 @@
+<!--
+    Error template for caddy
+-->
+{{ $path := .OriginalReq.URL.Path }}
+{{ $errorCode := placeholder "http.error.status_code" }}
+{{ $errorText := placeholder "http.error.status_text" }}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        {{ $path }}: {{ $errorText }}
+    </title>
+    <style>
+        @import url("https://woomy.be/style/schemes/dark.css");
+        @import url("https://woomy.be/style/schemes/light.css") (prefers-color-scheme: light);
+
+        body,
+        p,
+        h1,
+        span,
+        img {
+            background-color: var(--background);
+            color: var(--onBackground);
+            align-items: center;
+            text-align: center;
+        }
+
+        img {
+            width: 50%;
+            border-radius: 8px;
+            border: 2px solid var(--error);
+        }
+
+        a {
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Woops, an error occured!</h1>
+    <p>{{ $path }}: {{ $errorCode }} {{ $errorText }}</p>
+    <!-- Cute cat bcs why not? -->
+    <p>But here a <a href="https://http.cat">cat</a></p>
+    <img src="https://http.cat/{{ $errorCode }}.jpg" />
+</body>
+
+</html>

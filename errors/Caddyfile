@@ -1,0 +1,10 @@
+:8080 {
+    root * .
+    file_server browse
+    handle_errors {
+        rewrite * /error.html
+        templates
+        file_server
+    }
+}
+
